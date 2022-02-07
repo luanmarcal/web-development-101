@@ -9,7 +9,7 @@
 	Http ou Hipertext Tranfer Protocol é uma forma de trafegar dados dentro da web, funciona com o modelo de requisição e resposta, para\
 	utilizar destas requisições são utilizados os verbos Http. Os principais verbos Http de requisição são:\
 	*Get(retorna os dados de uma requisição);\
-	*Post(informa dados qeu irão causar uma mudança);\
+	*Post(informa dados que irão causar uma mudança);\
 	*Put(serve para substituir od dados de uma requisição);\
 	*Patch(é utilizado para aplicar modificações parcias em um recurso, diferente do Put);\
 	*Delete(remove um recurso específico).
@@ -86,7 +86,39 @@
 	*No terminal "yarn set version 1.22.11" sem as aspas.
 	
 **7. Java e JavaScript são a mesma linguagem ? Descreva as diferenças entre essas linguagens e pesquise do porque do nome ser parecido.**\
-	.
+	Não, são linguagens diferentes, a princípio JavaScript é uma linguagem mais utilizada para front-end e Java back-end, porém com a criação\ 
+	do NodeJs o JavaScript tem ganhado força no back-end também. Os nomes são similares pois aos duas linguagens pertencem a Oracle que por sua\ 
+	vez talvez tenha mudado o nome da LiveScript para JavaScript para aproveitar a grande ascenção do Java.
 	
+**8. Você possui o gerenciador de pacotes da linguagem Python em sua máquina?**\
+	Sim possuo.
 
+**8.1 Caso não tenha, instale o principal gerenciador de pacote para a linguagem python. | Listar os comandos que utilizou.**\
+	*No terminal "sudo apt install pip" sem aspas.\
+
+**8.2 Para checar se você possui o gerenciador de pacote do python (V maisusculo):**\
+	pip -V
+	
+**9. O que é linguagem interpretada ? O que é linguagem compilada ? E hibidria ?**\
+	**Linguagens Interpretadas**\
+	Nesse modelo o código gerado pelo desenvolvedor ao ser executado, ele passa primeiro por um software de interpretação que fará a leitura\
+	e na sequência execução dos comandos no sistema operacional, fazendo assim um meio de campo.\
+	**Linguagens Compiladas**
+	Já nesse caso, o código é passado para um compilador, que será convertido em uma linguagem nativa da máquina, para na sequência ser lido\
+	diretamente pelo processador, sem a necessidade de intermediador para a execução. 
+	**Linguagens Híbridas**
+	São aquelas que implementam as duas formas de leituras, compilado e interpretado, por exemplo o Java que tem um compilador que converte seu\
+	código para bytecode e na sequência isso é lido para JVM (Java Virtual Machine) que é basicamente um interpretador, para no final ser\
+	executado pelo CPU.
+
+**9.1 Escreva exemplos de linguagens compiladas, interpretadas e hibidrias.**
+	**Linguagens Interpretadas**\
+	 PHP, Ruby e JS.
+	 **Linguagens Compiladas**
+	 Assembly, C, Pascal e Fortran.
+	 **Linguagens Híbridas**
+	 JavaScript, python, Java, Swift.
+
+**9.2 Qual o nome do compilador da linguagem C ?**
+	O mais utilizado por desenvolvedores é o GCC
 	
