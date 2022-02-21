@@ -64,10 +64,12 @@
 	
 **5.1 Instale-o em sua máquina, versão LTS v14.17.3 | Listar os comandos que utilizou.**\
 	**NODE**\
-	*baixar node-v14.17.3-linux-x64.tar.xz https://nodejs.org/dist/v14.17.3/; \
+	*baixar node-v14.17.3-linux-x64.tar.xz https://nodejs.org/dist/v14.17.3/ \
 	*extrair na pasata de instalação;\
 	*abrir "nano .bashrc" sem aspas;\
-	*acrescentar o comando "export PATH=LOCAL-DE-EXTRAÇÃO/bin:$PATH" sem aspas.
+	*acrescentar o comando 
+	
+	export PATH=LOCAL-DE-EXTRAÇÃO/bin:$PATH
 	
 **6. O que são gerenciadores de pacotes (software)?**\
 	São uma coleção de ferramentas de software que automatiza o processo de instalação, atualização, configuração e\
@@ -75,28 +77,30 @@
 	Ele permite instalar, desinstalar e atualizar dependências em uma aplicação por meio de uma simples instrução na\
 	linha de comando.
 	
-**6.1 Instale os principais gerenciadores de pacote para a linguagem JavaScript em sua máquina. | Listar os comandos que utilizou.**\
-	**NPM**\
-	*No termianl "npm install -g npm" sem aspas para instalar versão mais recente do npm.\
-	*No terminal "npm install -g npm@7.24.1" sem aspas para versão especificada.\
-	**YARN**\
-	*No terminal "curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -" sem as aspas.\
-	*No terminal "echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list" sem as aspas.\
-	*No terminal "sudo apt update && sudo apt install --no-install-recommends yarn" sem as aspas.\
-	*No terminal "yarn set version 1.22.11" sem as aspas.
+**6.1 Instale os principais gerenciadores de pacote para a linguagem JavaScript em sua máquina. | Listar os comandos que utilizou.**
+
+	npm install -g npm
+	npm install -g npm@7.24.1
+
+	curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+	echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+	sudo apt update && sudo apt install --no-install-recommends yarn
+	yarn set version 1.22.11
 	
 **7. Java e JavaScript são a mesma linguagem ? Descreva as diferenças entre essas linguagens e pesquise do porque do nome ser parecido.**\
-	Não, são linguagens diferentes, a princípio JavaScript é uma linguagem mais utilizada para front-end e Java back-end, porém com a criação\ 
-	do NodeJs o JavaScript tem ganhado força no back-end também. Os nomes são similares pois aos duas linguagens pertencem a Oracle que por sua\ 
+	Não, são linguagens diferentes, a princípio JavaScript é uma linguagem mais utilizada para front-end e Java back-end, porém com a criação\
+	do NodeJs o JavaScript tem ganhado força no back-end também. Os nomes são similares pois aos duas linguagens pertencem a Oracle que por sua
 	vez talvez tenha mudado o nome da LiveScript para JavaScript para aproveitar a grande ascenção do Java.
 	
 **8. Você possui o gerenciador de pacotes da linguagem Python em sua máquina?**\
 	Sim possuo.
 
-**8.1 Caso não tenha, instale o principal gerenciador de pacote para a linguagem python. | Listar os comandos que utilizou.**\
-	*No terminal "sudo apt install pip" sem aspas.\
+**8.1 Caso não tenha, instale o principal gerenciador de pacote para a linguagem python. | Listar os comandos que utilizou.**
 
-**8.2 Para checar se você possui o gerenciador de pacote do python (V maisusculo):**\
+	sudo apt install pip
+
+**8.2 Para checar se você possui o gerenciador de pacote do python (V maisusculo):**
+	
 	pip -V
 	
 **9. O que é linguagem interpretada ? O que é linguagem compilada ? E hibidria ?**\
@@ -119,6 +123,79 @@
 	 **Linguagens Híbridas**
 	 JavaScript, python, Java, Swift.
 
-**9.2 Qual o nome do compilador da linguagem C ?**
+**9.2 Qual o nome do compilador da linguagem C ?**\
 	O mais utilizado por desenvolvedores é o GCC
+	
+**9.3 Qual o nome do compilador da linguagem Java ?**\
+	JavaC.
+	
+**9.4 Qual o nome do interpretador do bytecode da linguagem java ?**\
+	Java Virtual Machine.
+	
+**9.5 Qual o nome do interpretador da linguagem JavaScript ?**\
+	Engine JavaScript.
+	
+**9.6 Qual o nome interpretador da linguagem Python?**\
+	Interpretador Python.
+
+**9.7 Python é ou não compilado ? Pesquise e descreva o que encontrar.**\
+	Python é uma linguagem interpretada mas, assim como Java, passa por um processo de compilação, digamos que ela seja híbrida.
+	
+**10. O que é POO em programação?**\
+	POO(Programação Orientada a Objetos) é um modelo de análise, projeto e programação baseado na aproximação entre o mundo real\
+	e o mundo virtual, através da criação e interação entre objetos, atributos, códigos, métodos, entre outros.
+	
+**10.1 Java é totalmente POO. O que é uma classe e o que é um objeto ?**\
+	Classe é a definição de um objeto, e os objetos são diferentes modelos, por exemplo uma marca produz tênis, sapatos e chinelos,\
+	a marca pode ser considerada a classe, já os acessórios são os objetos.
+	
+**10.2 O que é a JVM, JRE e a JDK ? Descreva.**\
+	**JVM -** Máquina vitual Java, é um programa que processa os aplicativos Java para serem executados.\
+	**JRE -** Java Runtime Environment, é o ambiente de execução do Java.\
+	**JDK -** Java Development Kit, pode ser considerado as ferramentas de desenvolvimento Java.
+	
+**10.3 Quais os principais gerenciadores de pacote da linguagem java ?**\
+	NPM e Yarn.
+	
+**10.4 Instale o Open JDK 11 em sua máquina. | Listar os comandos que utilizou.**
+	
+	sudo apt install default-jdk
+	java --version
+	
+	
+**11. O que é uma IDE, o que é um editor de texto ?**\
+	Uma IDE possuí todas as ferramentas necessárias para o desenvolvimento de uma determinada ferramenta, já o editor de texto\
+	apenas facilita a edição de códigos.
+	
+**11.1 Vs Code é uma IDE ou um editor de Texto ?**\
+	É um editor de texto que possuí algumas funcionalidades a mais com plugins.
+	
+**11.2 Instale o Vs Code em sua máquina.**\
+	Ok.
+	
+**11.3 IntelliJ é uma IDE ou editor de texto ?**\
+	Uma IDE escrita em Java.
+	
+**11.4 Instale o IntelliJ em sua máquina**
+	Ok.
+	
+**12. O que é docker ?**\
+	 É uma tecnologia de containerização para criação e uso de containers Linux, sua aplicação é open source.
+	 
+**12.1 Quais suas vantagens ?**
+	Sua vantagem é permitir uma gestão dos recursos podendo agilizar o processo de criação e manutenção.
+	
+**12.1 Instale o Docker em sua máquina. | Listar os comandos que utilizou.**
+	
+	sudo apt-get install  curl apt-transport-https ca-certificates software-properties-common
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	
+
+
+
+
+
+
+	
+
 	
